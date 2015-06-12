@@ -28,7 +28,7 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
                 $usuario = new Usuario();
-                $a = $usuario->nombre = 'diego';
+                $a = $usuario->nombre = 'john';
                 $obtener = $usuario->obtenerPermiso($a);
 		$this->render('index', array('obtener' => $obtener));
 	}
